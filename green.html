@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Green nature photography gallery." />
-  <title>Green Gallery • Wild Hues</title>
+  <title>Green | Wild Hues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,48 +15,47 @@
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Wild Hues</a>
       <nav>
-        <a href="orange.html">Previous: Orange</a>
-        <a href="blue.html">Next: Blue</a>
+        <a href="index.html#colors">Colors</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero hero-color hero-green">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content color-hero-content">
-        <p class="eyebrow">Color gallery</p>
-        <h1>Green</h1>
-        <p class="hero-text">Moss, ferns, forest trails, rain-dark leaves, and the quiet density of deep woods.</p>
-      </div>
-    </section>
-
-    <section class="gallery-page container">
-      <div class="gallery-grid color-gallery-grid">
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Green forest with sunbeams" loading="lazy"><figcaption>Forest depth</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80" alt="Green forest path in light" loading="lazy"><figcaption>Trail light</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1200&q=80" alt="Green leaves with yellow tones" loading="lazy"><figcaption>Fresh growth</figcaption></figure>
-        <figure class="card wide dark-card"><img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1400&q=80" alt="Waterfall in a green forest" loading="lazy"><figcaption>Falls and moss</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?auto=format&fit=crop&w=1200&q=80" alt="Mossy stones in a forest" loading="lazy"><figcaption>Rainy stone</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80" alt="Field of green grass in sunlight" loading="lazy"><figcaption>Open meadow</figcaption></figure>
-      </div>
-
-      <div class="gallery-nav">
-        <a class="button ghost" href="orange.html">Back to Orange</a>
-        <a class="button primary tint-green" href="blue.html">Go to Blue</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Wild Hues</p>
-      <p>Green gallery</p>
+  <section class="gallery-hero green-page">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <a class="back-link" href="index.html">← Back to colors</a>
+      <p class="eyebrow">Color collection</p>
+      <h1>Green</h1>
+      <p class="hero-text">Replace these sample images with your own green photos and captions.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <main class="gallery-section container">
+    <div class="gallery-grid">
+      <figure class="photo-card">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Forest path" loading="lazy">
+        <figcaption>Forest path</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1200&q=80" alt="Falls and moss" loading="lazy">
+        <figcaption>Falls and moss</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80" alt="Dense canopy" loading="lazy">
+        <figcaption>Dense canopy</figcaption>
+      </figure>
+      <figure class="photo-card wide">
+        <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1600&q=80" alt="Green meadow" loading="lazy">
+        <figcaption>Green meadow</figcaption>
+      </figure>
+    </div>
+
+    <div class="pager">
+      <a href="index.html#colors">All colors</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </main>
 </body>
 </html>

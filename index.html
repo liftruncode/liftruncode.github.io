@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A dark nature photography portfolio organized by color." />
+  <meta name="description" content="Nature photography organized by color." />
   <title>Wild Hues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,7 +16,6 @@
       <a class="brand" href="index.html">Wild Hues</a>
       <nav>
         <a href="#colors">Colors</a>
-        <a href="#featured">Featured</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -26,84 +25,33 @@
   <main>
     <section class="hero hero-home">
       <div class="hero-overlay"></div>
-      <div class="container hero-content hero-home-content">
+      <div class="container hero-content">
         <p class="eyebrow">Nature photography by color</p>
-        <h1>Color is the trail into the image.</h1>
-        <p class="hero-text">
-          A dark, minimal portfolio that organizes the natural world by hue — warm sandstone, mossy green woods, deep blue water, and everything between.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#colors">Explore colors</a>
-          <a class="button secondary" href="#featured">Featured images</a>
-        </div>
+        <h1>Browse the wild by hue.</h1>
+        <p class="hero-text">A dark, minimal photo portfolio where each color opens into its own collection.</p>
       </div>
     </section>
 
-    <section id="colors" class="color-index container">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow">Color collections</p>
-          <h2>Browse by palette</h2>
-        </div>
-        <p class="section-copy">
-          Each gallery is meant to feel curated rather than exhaustive. Group images by their dominant feeling, not just the most literal color in the frame.
-        </p>
+    <section id="colors" class="colors-section container">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Collections</p>
+        <h2>Choose a color</h2>
+        <p class="section-text">Each tile acts like a giant button. Swap the background photos and add more colors whenever you want.</p>
       </div>
 
       <div class="color-grid">
-        <a class="color-card color-orange" href="orange.html">
-          <div class="color-card-image" style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80');"></div>
-          <div class="color-card-content">
-            <p class="color-name">Orange</p>
-            <p>Leaves, sandstone, rust, late light</p>
-          </div>
+        <a class="color-tile orange" href="orange.html">
+          <span class="color-meta">Leaves • Stone • Sunset</span>
+          <span class="color-name">Orange</span>
         </a>
-
-        <a class="color-card color-green" href="green.html">
-          <div class="color-card-image" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80');"></div>
-          <div class="color-card-content">
-            <p class="color-name">Green</p>
-            <p>Moss, trails, fern light, deep woods</p>
-          </div>
+        <a class="color-tile green" href="green.html">
+          <span class="color-meta">Moss • Forest • Fern</span>
+          <span class="color-name">Green</span>
         </a>
-
-        <a class="color-card color-blue" href="blue.html">
-          <div class="color-card-image" style="background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80');"></div>
-          <div class="color-card-content">
-            <p class="color-name">Blue</p>
-            <p>Water, sky, distance, cold calm</p>
-          </div>
+        <a class="color-tile blue" href="blue.html">
+          <span class="color-meta">Water • Sky • Distance</span>
+          <span class="color-name">Blue</span>
         </a>
-      </div>
-    </section>
-
-    <section id="featured" class="featured-section container">
-      <div class="section-heading">
-        <p class="eyebrow">Featured frames</p>
-        <h2>A few images across the spectrum</h2>
-      </div>
-
-      <div class="gallery-grid">
-        <figure class="card wide dark-card">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" alt="Forest lit by warm sunlight" loading="lazy">
-          <figcaption>Sun through trees</figcaption>
-        </figure>
-        <figure class="card dark-card">
-          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80" alt="Deer in warm evening light" loading="lazy">
-          <figcaption>Amber field</figcaption>
-        </figure>
-        <figure class="card dark-card">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Blue mountain lake at sunrise" loading="lazy">
-          <figcaption>Cold morning water</figcaption>
-        </figure>
-        <figure class="card dark-card">
-          <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=900&q=80" alt="Snow-covered evergreen trees" loading="lazy">
-          <figcaption>White silence</figcaption>
-        </figure>
-        <figure class="card dark-card">
-          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80" alt="Sunlight in green forest" loading="lazy">
-          <figcaption>Woodland green</figcaption>
-        </figure>
       </div>
     </section>
 
@@ -111,14 +59,14 @@
       <div class="container about-grid">
         <div>
           <p class="eyebrow">About</p>
-          <h2>A more curated way to show nature work</h2>
+          <h2>A more curated way to show nature photos.</h2>
         </div>
         <div>
           <p>
-            Instead of sorting by subject alone, this layout gives your photography a stronger point of view. Color becomes the thread that ties together leaves, water, bark, sky, stone, and seasonal light.
+            Instead of one mixed gallery, the site invites people into a specific mood through color. That makes it feel more intentional, more visual, and a little more like an exhibit.
           </p>
           <p>
-            Replace the sample images with your own photos, then add more color pages like red, yellow, white, brown, or monochrome when you are ready.
+            You can keep expanding this with Yellow, Red, White, Brown, Purple, or Monochrome pages later.
           </p>
         </div>
       </div>
@@ -126,8 +74,8 @@
 
     <section id="contact" class="contact-section container">
       <p class="eyebrow">Contact</p>
-      <h2>Follow the work</h2>
-      <p class="section-copy narrow-copy">Swap these sample links for your real email and socials.</p>
+      <h2>Elsewhere</h2>
+      <p>Replace these with your real links.</p>
       <div class="contact-links">
         <a href="mailto:you@example.com">Email</a>
         <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>

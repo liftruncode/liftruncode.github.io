@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Blue nature photography gallery." />
-  <title>Blue Gallery • Wild Hues</title>
+  <title>Blue | Wild Hues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,48 +15,47 @@
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Wild Hues</a>
       <nav>
-        <a href="green.html">Previous: Green</a>
-        <a href="index.html#colors">All colors</a>
+        <a href="index.html#colors">Colors</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero hero-color hero-blue">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content color-hero-content">
-        <p class="eyebrow">Color gallery</p>
-        <h1>Blue</h1>
-        <p class="hero-text">Open water, dusk, glacial light, distant ridgelines, and the cooler side of quiet landscapes.</p>
-      </div>
-    </section>
-
-    <section class="gallery-page container">
-      <div class="gallery-grid color-gallery-grid">
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Blue mountain lake" loading="lazy"><figcaption>Lake stillness</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80" alt="Blue ocean waves" loading="lazy"><figcaption>Ocean rhythm</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80" alt="Blue mountains and trees" loading="lazy"><figcaption>Fading ridges</figcaption></figure>
-        <figure class="card wide dark-card"><img src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?auto=format&fit=crop&w=1400&q=80" alt="Blue waterfall and pool" loading="lazy"><figcaption>Cold cascade</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" alt="Blue-toned winter scene with deer" loading="lazy"><figcaption>Winter blue</figcaption></figure>
-        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Cool blue light through forest trees" loading="lazy"><figcaption>Blue hour woods</figcaption></figure>
-      </div>
-
-      <div class="gallery-nav">
-        <a class="button ghost" href="green.html">Back to Green</a>
-        <a class="button primary tint-blue" href="index.html#colors">Back to all colors</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Wild Hues</p>
-      <p>Blue gallery</p>
+  <section class="gallery-hero blue-page">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <a class="back-link" href="index.html">← Back to colors</a>
+      <p class="eyebrow">Color collection</p>
+      <h1>Blue</h1>
+      <p class="hero-text">Replace these sample images with your own blue photos and captions.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <main class="gallery-section container">
+    <div class="gallery-grid">
+      <figure class="photo-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Blue surf" loading="lazy">
+        <figcaption>Blue surf</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Alpine lake" loading="lazy">
+        <figcaption>Alpine lake</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Misty ridge" loading="lazy">
+        <figcaption>Misty ridge</figcaption>
+      </figure>
+      <figure class="photo-card wide">
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1600&q=80" alt="Blue water and sky" loading="lazy">
+        <figcaption>Blue water and sky</figcaption>
+      </figure>
+    </div>
+
+    <div class="pager">
+      <a href="index.html#colors">All colors</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </main>
 </body>
 </html>
