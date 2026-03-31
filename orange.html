@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Orange nature photography gallery." />
+  <title>Orange Gallery • Wild Hues</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Wild Hues</a>
+      <nav>
+        <a href="index.html#colors">All colors</a>
+        <a href="green.html">Next: Green</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-color hero-orange">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content color-hero-content">
+        <p class="eyebrow">Color gallery</p>
+        <h1>Orange</h1>
+        <p class="hero-text">Autumn leaves, canyon walls, rust, dried grasses, and low warm light at the edge of the day.</p>
+      </div>
+    </section>
+
+    <section class="gallery-page container">
+      <div class="gallery-grid color-gallery-grid">
+        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Orange desert rock" loading="lazy"><figcaption>Sandstone glow</figcaption></figure>
+        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80" alt="Orange autumn leaves in the forest" loading="lazy"><figcaption>Fall canopy</figcaption></figure>
+        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1200&q=80" alt="Orange leaves on a branch" loading="lazy"><figcaption>Maple detail</figcaption></figure>
+        <figure class="card wide dark-card"><img src="https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?auto=format&fit=crop&w=1400&q=80" alt="Sunset light over orange landscape" loading="lazy"><figcaption>Evening stone</figcaption></figure>
+        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1508873699372-7aeab60b44c6?auto=format&fit=crop&w=1200&q=80" alt="Orange fern or leaves in sunlight" loading="lazy"><figcaption>Warm understory</figcaption></figure>
+        <figure class="card dark-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Orange sunset over water" loading="lazy"><figcaption>Last light</figcaption></figure>
+      </div>
+
+      <div class="gallery-nav">
+        <a class="button ghost" href="index.html#colors">Back to colors</a>
+        <a class="button primary tint-orange" href="green.html">Go to Green</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Wild Hues</p>
+      <p>Orange gallery</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
