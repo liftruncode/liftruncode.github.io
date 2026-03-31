@@ -1,98 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nature photography organized by color." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wild Hues</title>
+  <meta name="description" content="A nature photography portfolio organized by color.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home-page">
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Wild Hues</a>
-      <nav>
-        <a href="#colors">Colors</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="brand-wrap">
+      <p class="eyebrow">Nature photography by color</p>
+      <h1>Wild Hues</h1>
+      <p class="intro">A collection of forests, light, water, texture, and seasonal moments organized by the color they carry most strongly.</p>
     </div>
+    <nav class="site-nav">
+      <a href="orange.html">Orange</a>
+      <a href="green.html">Green</a>
+      <a href="blue.html">Blue</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero hero-home">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">Nature photography by color</p>
-        <h1>Browse the wild by hue.</h1>
-        <p class="hero-text">A dark, minimal photo portfolio where each color opens into its own collection.</p>
+    <a class="color-row orange-row" href="orange.html" aria-label="View Orange gallery">
+      <div class="row-overlay"></div>
+      <div class="row-content">
+        <p class="row-label">Gallery 01</p>
+        <h2>Orange</h2>
+        <p>Leaves, sandstone, sunset, bark, warmth</p>
       </div>
-    </section>
+    </a>
 
-    <section id="colors" class="colors-section container">
-      <div class="section-heading narrow">
-        <p class="eyebrow">Collections</p>
-        <h2>Choose a color</h2>
-        <p class="section-text">Each tile acts like a giant button. Swap the background photos and add more colors whenever you want.</p>
+    <a class="color-row green-row" href="green.html" aria-label="View Green gallery">
+      <div class="row-overlay"></div>
+      <div class="row-content">
+        <p class="row-label">Gallery 02</p>
+        <h2>Green</h2>
+        <p>Moss, ferns, forests, undergrowth, rain</p>
       </div>
+    </a>
 
-      <div class="color-grid">
-        <a class="color-tile orange" href="orange.html">
-          <span class="color-meta">Leaves • Stone • Sunset</span>
-          <span class="color-name">Orange</span>
-        </a>
-        <a class="color-tile green" href="green.html">
-          <span class="color-meta">Moss • Forest • Fern</span>
-          <span class="color-name">Green</span>
-        </a>
-        <a class="color-tile blue" href="blue.html">
-          <span class="color-meta">Water • Sky • Distance</span>
-          <span class="color-name">Blue</span>
-        </a>
+    <a class="color-row blue-row" href="blue.html" aria-label="View Blue gallery">
+      <div class="row-overlay"></div>
+      <div class="row-content">
+        <p class="row-label">Gallery 03</p>
+        <h2>Blue</h2>
+        <p>Water, sky, distance, shadow, ice</p>
       </div>
-    </section>
-
-    <section id="about" class="about-section">
-      <div class="container about-grid">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>A more curated way to show nature photos.</h2>
-        </div>
-        <div>
-          <p>
-            Instead of one mixed gallery, the site invites people into a specific mood through color. That makes it feel more intentional, more visual, and a little more like an exhibit.
-          </p>
-          <p>
-            You can keep expanding this with Yellow, Red, White, Brown, Purple, or Monochrome pages later.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section container">
-      <p class="eyebrow">Contact</p>
-      <h2>Elsewhere</h2>
-      <p>Replace these with your real links.</p>
-      <div class="contact-links">
-        <a href="mailto:you@example.com">Email</a>
-        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </section>
+    </a>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Wild Hues</p>
-      <p>Built for GitHub Pages</p>
-    </div>
+    <p>Replace the homepage background images in <code>styles.css</code> and add your own photos inside the <code>images/</code> folders.</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

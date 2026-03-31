@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Orange nature photography gallery." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orange | Wild Hues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="gallery-page">
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Wild Hues</a>
-      <nav>
-        <a href="index.html#colors">Colors</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+    <div class="page-head">
+      <div class="page-top">
+        <a class="back-link" href="index.html">← Back home</a>
+        <nav class="page-nav">
+          <a href="orange.html">Orange</a>
+          <a href="green.html">Green</a>
+          <a href="blue.html">Blue</a>
+        </nav>
+      </div>
+      <p class="kicker">Gallery 01</p>
+      <h1>Orange</h1>
+      <p class="page-subtitle">Autumn leaves, bark, sunset rock, dry grass, warm light, and all the places nature turns to ember.</p>
+      <p class="nav-note">Put your orange photos in <code>images/orange/</code>, then replace or duplicate the cards below.</p>
     </div>
   </header>
 
-  <section class="gallery-hero orange-page">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <a class="back-link" href="index.html">← Back to colors</a>
-      <p class="eyebrow">Color collection</p>
-      <h1>Orange</h1>
-      <p class="hero-text">Replace these sample images with your own orange photos and captions.</p>
-    </div>
-  </section>
+  <main>
+    <section class="gallery">
+      <article class="photo-card">
+        <img src="images/orange/orange-01.jpg" alt="Orange leaves in late afternoon light">
+        <div class="photo-meta">
+          <h3>orange-01.jpg</h3>
+          <p>Rename this caption or delete it.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <img src="images/orange/orange-02.jpg" alt="Warm sandstone and orange brush">
+        <div class="photo-meta">
+          <h3>orange-02.jpg</h3>
+          <p>Drop your second orange image into the folder.</p>
+        </div>
+      </article>
+      <article class="photo-card">
+        <img src="images/orange/orange-03.jpg" alt="Orange grasses and bark texture">
+        <div class="photo-meta">
+          <h3>orange-03.jpg</h3>
+          <p>Duplicate this card to add more images.</p>
+        </div>
+      </article>
+    </section>
 
-  <main class="gallery-section container">
-    <div class="gallery-grid">
-      <figure class="photo-card">
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Golden leaves" loading="lazy">
-        <figcaption>Golden leaves</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" alt="Warm light on deer" loading="lazy">
-        <figcaption>Warm light on deer</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1200&q=80" alt="Orange hillside" loading="lazy">
-        <figcaption>Orange hillside</figcaption>
-      </figure>
-      <figure class="photo-card wide">
-        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=80" alt="Autumn reflection" loading="lazy">
-        <figcaption>Autumn reflection</figcaption>
-      </figure>
-    </div>
-
-    <div class="pager">
-      <a href="index.html#colors">All colors</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
+    <section class="instructions">
+      <h3>How to add more orange photos</h3>
+      <pre><code>&lt;article class="photo-card"&gt;
+  &lt;img src="images/orange/your-file-name.jpg" alt="Describe the photo"&gt;
+  &lt;div class="photo-meta"&gt;
+    &lt;h3&gt;your-file-name.jpg&lt;/h3&gt;
+    &lt;p&gt;Optional caption here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+    </section>
   </main>
 </body>
 </html>
