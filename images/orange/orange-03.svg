@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" role="img" aria-label="Orange 03 placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#g)"/>
+  <circle cx="1080" cy="220" r="120" fill="rgba(255,255,255,0.08)"/>
+  <path d="M0 760 C220 680, 360 820, 560 730 S980 610, 1400 760 L1400 1000 L0 1000 Z" fill="rgba(0,0,0,0.20)"/>
+  <path d="M0 840 C210 770, 410 890, 660 800 S1080 760, 1400 860 L1400 1000 L0 1000 Z" fill="rgba(255,255,255,0.08)"/>
+  <text x="70" y="915" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700" fill="rgba(255,255,255,0.86)">Orange 03</text>
+</svg>
