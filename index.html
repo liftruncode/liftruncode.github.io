@@ -7,7 +7,7 @@
   <title>Wild Hues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,129 +15,55 @@
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Wild Hues</a>
       <nav>
-        <a href="#collections">Collections</a>
+        <a href="#colors">Colors</a>
         <a href="#about">About</a>
-        <a href="#contact">Socials</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-compact">
-      <div class="container hero-content compact">
-        <p class="eyebrow">Nature photography by color</p>
-        <h1>Browse the outdoors by hue.</h1>
-        <p class="hero-text">A darker, cleaner portfolio where each gallery is built around a color story — leaves, water, bark, snow, shadow, and light.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#collections">Explore colors</a>
-          <a class="button secondary" href="#about">About</a>
-        </div>
+    <section class="hero hero-short">
+      <div class="container hero-content">
+        <p class="eyebrow">Nature by color</p>
+        <h1>Quiet scenes, sorted by hue.</h1>
+        <p class="hero-text">A dark, simple photo portfolio where each gallery is built around a dominant color in the landscape.</p>
       </div>
     </section>
 
-    <section id="collections" class="collections-section container">
+    <section id="colors" class="tiles-section container">
       <div class="section-heading compact-heading">
-        <p class="eyebrow">Collections</p>
+        <p class="eyebrow">Browse</p>
         <h2>Choose a color</h2>
       </div>
 
       <div class="color-grid">
-        <a class="color-tile color-red" href="red.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Red</span>
-            <span class="tile-note">Berries, petals, stone, late light</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-orange" href="orange.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Orange</span>
-            <span class="tile-note">Leaves, canyon, bark, ember tones</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-yellow" href="yellow.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Yellow</span>
-            <span class="tile-note">Wildflowers, fields, glow, pollen</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-green" href="green.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Green</span>
-            <span class="tile-note">Moss, forests, ferns, trail light</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-blue" href="blue.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Blue</span>
-            <span class="tile-note">Water, sky, ice, distance</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-purple" href="purple.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Purple</span>
-            <span class="tile-note">Thistle, dusk, bloom, shadow</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-white" href="white.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">White</span>
-            <span class="tile-note">Snow, mist, bark, bloom</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-brown" href="brown.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Brown</span>
-            <span class="tile-note">Wood, soil, stone, branches</span>
-          </span>
-        </a>
-
-        <a class="color-tile color-black span-2" href="black.html">
-          <span class="tile-overlay"></span>
-          <span class="tile-copy">
-            <span class="tile-name">Black</span>
-            <span class="tile-note">Silhouette, ash, depth, night</span>
-          </span>
-        </a>
+        <a class="color-tile red" href="red.html"><span>Red</span></a>
+        <a class="color-tile orange" href="orange.html"><span>Orange</span></a>
+        <a class="color-tile yellow" href="yellow.html"><span>Yellow</span></a>
+        <a class="color-tile green" href="green.html"><span>Green</span></a>
+        <a class="color-tile blue" href="blue.html"><span>Blue</span></a>
+        <a class="color-tile purple" href="purple.html"><span>Purple</span></a>
+        <a class="color-tile white" href="white.html"><span>White</span></a>
+        <a class="color-tile brown" href="brown.html"><span>Brown</span></a>
+        <a class="color-tile black wide" href="black.html"><span>Black</span></a>
       </div>
     </section>
 
-    <section id="about" class="about-strip">
-      <div class="container about-grid compact-about">
+    <section id="about" class="about-footer">
+      <div class="container about-footer-grid">
         <div>
           <p class="eyebrow">About</p>
-          <h2>Built for color-led nature work.</h2>
+          <h2>Nature photography, organized simply.</h2>
+          <p>Use this space for a short note about what you shoot, where you wander, and what draws your eye outdoors.</p>
         </div>
         <div>
-          <p>Use this section for a short note about where you shoot, what keeps pulling you outdoors, and how you think about color in your photography.</p>
-          <p>For the homepage cover tiles, swap the placeholder files in each color folder with your own strongest image for that color.</p>
+          <p class="eyebrow">Social</p>
+          <div class="contact-links">
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:you@example.com">Email</a>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section container compact-contact">
-      <p class="eyebrow">Socials</p>
-      <h2>Find me elsewhere</h2>
-      <p>Replace these with your actual links.</p>
-      <div class="contact-links">
-        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://500px.com/" target="_blank" rel="noreferrer">500px</a>
-        <a href="mailto:you@example.com">Email</a>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </section>
   </main>
