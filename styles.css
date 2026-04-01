@@ -131,6 +131,59 @@ img { max-width: 100%; display: block; }
 .contact-links a:hover { border-color: rgba(255,255,255,0.18); }
 
 .site-header, .site-footer { display:none; }
+.gallery-body .site-header,
+.gallery-body .site-footer { display:block; }
+.gallery-body .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+  background: rgba(11,11,12,0.72);
+  border-bottom: 1px solid var(--line);
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+}
+.brand {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.4rem;
+}
+.gallery-body nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery-body nav a,
+.back-pill {
+  color: var(--text);
+  opacity: 0.92;
+}
+.gallery-body nav a:hover,
+.back-pill:hover {
+  opacity: 1;
+}
+.subhero-actions { margin-top: 1.15rem; }
+.back-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.04);
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 0 2rem;
+  color: var(--muted);
+}
 .subhero {
   padding: 4rem 0 2rem;
   border-bottom: 1px solid var(--line);
