@@ -11,41 +11,31 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Wild Hues</a>
-      <nav>
-        <a href="#colors">Colors</a>
-        <a href="#about">About</a>
-      </nav>
-    </div>
-  </header>
-
   <main>
-    <section class="hero hero-short">
+    <section class="hero compact-hero">
       <div class="container hero-content">
-        <p class="eyebrow">Nature by color</p>
-        <h1>Quiet scenes, sorted by hue.</h1>
-        <p class="hero-text">A dark, simple photo portfolio where each gallery is built around a dominant color in the landscape.</p>
+        <p class="eyebrow">Nature photography by color</p>
+        <h1>Wild Hues</h1>
+        <p class="hero-text">A darker, simpler way to browse the outdoors — organized by the colors that pull you in first.</p>
       </div>
     </section>
 
-    <section id="colors" class="tiles-section container">
-      <div class="section-heading compact-heading">
-        <p class="eyebrow">Browse</p>
-        <h2>Choose a color</h2>
+    <section id="colors" class="colors-section container">
+      <div class="section-heading">
+        <p class="eyebrow">Collections</p>
+        <h2>Browse by color</h2>
       </div>
 
       <div class="color-grid">
-        <a class="color-tile red" href="red.html"><span>Red</span></a>
-        <a class="color-tile orange" href="orange.html"><span>Orange</span></a>
-        <a class="color-tile yellow" href="yellow.html"><span>Yellow</span></a>
-        <a class="color-tile green" href="green.html"><span>Green</span></a>
-        <a class="color-tile blue" href="blue.html"><span>Blue</span></a>
-        <a class="color-tile purple" href="purple.html"><span>Purple</span></a>
-        <a class="color-tile white" href="white.html"><span>White</span></a>
-        <a class="color-tile brown" href="brown.html"><span>Brown</span></a>
-        <a class="color-tile black wide" href="black.html"><span>Black</span></a>
+        <a class="color-tile tile-red" href="red.html"><span>Red</span></a>
+        <a class="color-tile tile-orange" href="orange.html"><span>Orange</span></a>
+        <a class="color-tile tile-yellow" href="yellow.html"><span>Yellow</span></a>
+        <a class="color-tile tile-green" href="green.html"><span>Green</span></a>
+        <a class="color-tile tile-blue" href="blue.html"><span>Blue</span></a>
+        <a class="color-tile tile-purple" href="purple.html"><span>Purple</span></a>
+        <a class="color-tile tile-white" href="white.html"><span>White</span></a>
+        <a class="color-tile tile-brown" href="brown.html"><span>Brown</span></a>
+        <a class="color-tile tile-black tile-wide" href="black.html"><span>Black</span></a>
       </div>
     </section>
 
@@ -53,11 +43,10 @@
       <div class="container about-footer-grid">
         <div>
           <p class="eyebrow">About</p>
-          <h2>Nature photography, organized simply.</h2>
-          <p>Use this space for a short note about what you shoot, where you wander, and what draws your eye outdoors.</p>
+          <h2>Quiet scenes, strong color, simple presentation.</h2>
         </div>
         <div>
-          <p class="eyebrow">Social</p>
+          <p>Use this space for a short line about where you shoot, what you notice outdoors, and where people can find more of your work.</p>
           <div class="contact-links">
             <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
@@ -67,16 +56,5 @@
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Wild Hues</p>
-      <p>Built for GitHub Pages</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
