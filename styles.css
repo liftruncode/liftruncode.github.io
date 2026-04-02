@@ -310,9 +310,8 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   opacity: 1;
 }
 
-
-.lightbox-prev { left: 0.25rem; }
-.lightbox-next { right: 0.25rem; }
+.lightbox-prev { left: -3.25rem; }
+.lightbox-next { right: -3.25rem; }
 
 @media (max-width: 640px) {
   .lightbox-nav {
@@ -322,8 +321,8 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
     color: rgba(255, 255, 255, 0.55);
   }
 
-  .lightbox-prev { left: 0; }
-  .lightbox-next { right: 0; }
+  .lightbox-prev { left: -1rem; }
+  .lightbox-next { right: -1rem; }
 }
 
 @media (max-width: 900px) {
