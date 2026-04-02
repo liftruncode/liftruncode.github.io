@@ -222,7 +222,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   height: 320px;
   object-fit: cover;
   display: block;
-  cursor: zoom-in;
+  cursor: pointer;
   transition: transform 0.25s ease;
 }
 
