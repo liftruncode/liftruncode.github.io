@@ -123,6 +123,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   border: 1px solid rgba(255,255,255,0.08);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: transform 0.22s ease, border-color 0.22s ease, filter 0.22s ease;
 }
 .color-tile::before {
@@ -144,13 +145,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
 }
 .tile-wide { grid-column: 1 / -1; min-height: 240px; }
 
-.tile-red {
-  background-image:
-    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
-    url('images/red/IMG_4316.JPEG');
-  background-size: cover;
-  background-position: center;
-}
+.tile-red { background-image: url('images/red/IMG_4093.JPEG'); }
 .tile-orange { background-image: url('images/orange/IMG_0776.JPEG'); }
 .tile-yellow { background: linear-gradient(135deg, #7a6411, #2d2609); }
 .tile-green { background: linear-gradient(135deg, #1b4227, #0f1f15); }
