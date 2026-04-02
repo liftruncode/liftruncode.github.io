@@ -144,8 +144,12 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
 }
 .tile-wide { grid-column: 1 / -1; min-height: 240px; }
 
-.tile-red { background: linear-gradient(135deg, #591212, #241010); }
-.tile-orange { background-image: url('images/orange/IMG_1761.JPEG'); }
+tile-red {
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.4)), url("images/red/IMG_4093.JPEG");
+  background-size: cover;
+  background-position: center;
+}
+.tile-orange { background-image: url('images/orange/IMG_0776.JPEG'); }
 .tile-yellow { background: linear-gradient(135deg, #7a6411, #2d2609); }
 .tile-green { background: linear-gradient(135deg, #1b4227, #0f1f15); }
 .tile-blue { background: linear-gradient(135deg, #16365f, #0d182a); }
