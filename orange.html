@@ -84,37 +84,46 @@
   </main>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
     <button class="lightbox-close" type="button" aria-label="Close image">×</button>
     <img class="lightbox-image" src="" alt="Expanded gallery image">
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
   </div>
 
  <script>
   const lightbox = document.getElementById('lightbox');
   const lightboxImage = lightbox.querySelector('.lightbox-image');
   const closeButton = lightbox.querySelector('.lightbox-close');
+  const prevButton = lightbox.querySelector('.lightbox-prev');
+  const nextButton = lightbox.querySelector('.lightbox-next');
+  const galleryImages = Array.from(document.querySelectorAll('.lightbox-gallery img'));
   const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
   let scrollY = 0;
+  let currentIndex = 0;
 
-  document.querySelectorAll('.lightbox-gallery img').forEach((img) => {
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', () => {
-      lightboxImage.src = img.src;
-      lightboxImage.alt = img.alt;
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
+  function updateLightboxImage() {
+    const img = galleryImages[currentIndex];
+    lightboxImage.src = img.src;
+    lightboxImage.alt = img.alt;
+  }
 
-      if (isTouchDevice) {
-        scrollY = window.scrollY;
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollY}px`;
-        document.body.style.left = '0';
-        document.body.style.right = '0';
-        document.body.style.width = '100%';
-      } else {
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightboxImage();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+
+    if (isTouchDevice) {
+      scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+  }
 
   function closeLightbox() {
     lightbox.classList.remove('open');
@@ -133,12 +142,33 @@
     }
   }
 
+  function showNext() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateLightboxImage();
+  }
+
+  function showPrevious() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightboxImage();
+  }
+
+  galleryImages.forEach((img, index) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => openLightbox(index));
+  });
+
   closeButton.addEventListener('click', closeLightbox);
+  nextButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    showNext();
+  });
+  prevButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    showPrevious();
+  });
+
   lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) closeLightbox();
-  });
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
   });
 </script>
 </body>
