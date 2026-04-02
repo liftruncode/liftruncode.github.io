@@ -11,17 +11,107 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Wild Hues</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#colors">All colors</a>
+        <a href="#gallery">Yellow gallery</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section class="subhero">
+    <section class="subhero subhero-yellow">
       <div class="container">
         <p class="eyebrow">Color gallery</p>
         <h1>Yellow</h1>
-        <p class="hero-text">Add your yellow nature photos to this collection.</p>
+        <p class="hero-text">Leaves, flowers, light, bark, and bright yellow moments found outdoors.</p>
+        <div class="contact-links back-links">
+          <a href="index.html">← Back to home</a>
+        </div>
       </div>
     </section>
-    <section class="gallery-page container">
-      <div class="contact-links"><a href="index.html">Back home</a></div>
+
+    <section id="gallery" class="gallery-page container">
+      <div class="gallery-grid gallery-grid-page lightbox-gallery">
+        <figure class="card"><img src="images/yellow/IMG_0106.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_0348.JPEG" alt="Yellow nature photo" loading="lazy"></figure>        
+        <figure class="card"><img src="images/yellow/IMG_1475.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_1613.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_2158.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_2168.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_2354.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_2536.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_3532.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_3745.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4061.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4073.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4486.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4601.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4617.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4725.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_4763.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_5630.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_5689.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_6121.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_6133.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_6156.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_6190.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_6237.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_6516.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_7385.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_7423.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_7502.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_7643.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_7750.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_8367.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_8377.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_8493.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_8563.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_8736.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_9427.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/yellow/IMG_9818.JPEG" alt="Yellow nature photo" loading="lazy"></figure>
+      </div>
     </section>
   </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img class="lightbox-image" src="" alt="Expanded gallery image">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const closeButton = lightbox.querySelector('.lightbox-close');
+
+    document.querySelectorAll('.lightbox-gallery img').forEach((img) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImage.src = '';
+      document.body.style.overflow = '';
+    }
+
+    closeButton.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  </script>
 </body>
 </html>
