@@ -3,30 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nature photography organized by color." />
+  <meta name="description" content="Nature photography organized by color" />
   <title>Wild Hues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header home-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Wild Hues</a>
+      <nav>
+        <a href="#colors">Colors</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section class="hero compact-hero">
+    <section class="hero hero-dark" id="top">
+      <div class="hero-overlay"></div>
       <div class="container hero-content">
         <p class="eyebrow">Nature photography by color</p>
-        <h1>Wild Hues</h1>
-        <p class="hero-text">A darker, simpler way to browse the outdoors — organized by the colors that pull you in first.</p>
+        <h1>Color as a way into the landscape.</h1>
+        <p class="hero-text">A collection of nature photos organized by hue — from warm leaves and sandstone to water, moss, bark, snow, and shadow.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#colors">Browse colors</a>
+        </div>
       </div>
     </section>
 
-    <section id="colors" class="colors-section container">
-      <div class="section-heading">
+    <section id="colors" class="tile-section container">
+      <div class="section-heading section-heading-tight">
         <p class="eyebrow">Collections</p>
         <h2>Browse by color</h2>
       </div>
 
-      <div class="color-grid">
+      <div class="tile-grid">
         <a class="color-tile tile-red" href="red.html"><span>Red</span></a>
         <a class="color-tile tile-orange" href="orange.html"><span>Orange</span></a>
         <a class="color-tile tile-yellow" href="yellow.html"><span>Yellow</span></a>
@@ -39,22 +53,33 @@
       </div>
     </section>
 
-    <section id="about" class="about-footer">
-      <div class="container about-footer-grid">
+    <section id="about" class="about-section about-dark">
+      <div class="container about-grid">
         <div>
           <p class="eyebrow">About</p>
-          <h2>Quiet scenes, strong color, simple presentation.</h2>
+          <h2>Built to let the photos carry the weight.</h2>
         </div>
         <div>
-          <p>Use this space for a short line about where you shoot, what you notice outdoors, and where people can find more of your work.</p>
+          <p>Use this space for a short line about how and where you shoot. Keep it light, then point people to your socials.</p>
           <div class="contact-links">
             <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
             <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer site-footer-dark">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Wild Hues</p>
+      <p>Built on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

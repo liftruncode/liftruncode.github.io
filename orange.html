@@ -11,17 +11,112 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Wild Hues</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#gallery">Orange gallery</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section class="subhero">
+    <section class="subhero subhero-orange">
       <div class="container">
         <p class="eyebrow">Color gallery</p>
         <h1>Orange</h1>
-        <p class="hero-text">Add your orange nature photos to this collection.</p>
+        <p class="hero-text">Leaves, stone, bark, fungi, sunset light, and all the warm orange moments found outdoors.</p>
+        <div class="contact-links back-links">
+          <a href="index.html">← Back to home</a>
+        </div>
       </div>
     </section>
-    <section class="gallery-page container">
-      <div class="contact-links"><a href="index.html">Back home</a></div>
+
+    <section id="gallery" class="gallery-page container">
+      <div class="gallery-grid gallery-grid-page lightbox-gallery">
+        <figure class="card"><img src="images/orange/IMG_1761.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_5431.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_4172.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_3862.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_1998.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_5708.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_5139.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_2619.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_1551.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_0012.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_4660.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_8786.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_6364.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_4100.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_6683.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_4501.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_0902.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_5488.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_3177.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_0324.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_9221.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_9060.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_7861.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_7594.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_6812.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_8279.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_0776.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_2571.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_2560.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_2059.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_0568.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_8641.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_8480.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_8440.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_4915.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_3013.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_2681.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_1321.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_1004.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_3596.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_6388.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/IMG_4584.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+        <figure class="card"><img src="images/orange/ComfyUI_00223_.JPEG" alt="Orange nature photo" loading="lazy"></figure>
+      </div>
     </section>
   </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img class="lightbox-image" src="" alt="Expanded gallery image">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const closeButton = lightbox.querySelector('.lightbox-close');
+
+    document.querySelectorAll('.lightbox-gallery img').forEach((img) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImage.src = '';
+      document.body.style.overflow = '';
+    }
+
+    closeButton.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  </script>
 </body>
 </html>
