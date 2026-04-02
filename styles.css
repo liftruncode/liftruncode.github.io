@@ -220,6 +220,11 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   object-fit: cover;
   display: block;
   cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+.gallery-grid-page .card:hover img {
+  transform: scale(1.04);
 }
 
 /* gallery pages */
