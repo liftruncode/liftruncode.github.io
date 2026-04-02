@@ -145,7 +145,9 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
 .tile-wide { grid-column: 1 / -1; min-height: 240px; }
 
 .tile-red {
-  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.4)), url("images/red/IMG_4093.JPEG");
+  background-image:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
+    url('images/red/IMG_4316.JPEG');
   background-size: cover;
   background-position: center;
 }
