@@ -241,7 +241,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
 }
 .back-links { margin-top: 1.25rem; }
 .gallery-grid-page .card figcaption { display: none; }
-.gallery-grid-page .card img { cursor: zoom-in; }
+.gallery-grid-page .card img { cursor: pointer; }
 .lightbox {
   position: fixed;
   inset: 0;
@@ -272,6 +272,38 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   font-size: 1.75rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(20,20,20,0.9);
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+@media (max-width: 640px) {
+  .lightbox-nav {
+    width: 48px;
+    height: 48px;
+    font-size: 1.7rem;
+  }
+
+  .lightbox-prev { left: 0.75rem; }
+  .lightbox-next { right: 0.75rem; }
 }
 
 @media (max-width: 900px) {
