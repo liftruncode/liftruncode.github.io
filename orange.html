@@ -169,6 +169,7 @@
 
   lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) closeLightbox();
+    });
 
   document.addEventListener('keydown', (event) => {
   if (!lightbox.classList.contains('open')) return;
