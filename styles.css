@@ -330,12 +330,13 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   }
 
   .lightbox-image {
-    max-width: 100vw;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
-    border-radius: 0;
-  }
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+  border-radius: 0;
+}
 
   .lightbox-close {
     top: 0.75rem;
