@@ -336,7 +336,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   max-height: 100vh;
   object-fit: contain;
   border-radius: 0;
-}
+  }
 
   .lightbox-close {
     top: 0.75rem;
@@ -346,12 +346,8 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   }
 
   .lightbox-nav {
-    font-size: 2.5rem;
-    color: rgba(255,255,255,0.45);
+  display: none;
   }
-
-  .lightbox-prev { left: 0.25rem; }
-  .lightbox-next { right: 0.25rem; }
 }
 
 @media (max-width: 900px) {
