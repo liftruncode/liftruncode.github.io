@@ -151,7 +151,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
 .tile-red { background-image: url('images/red/IMG_4093.JPEG'); }
 .tile-orange { background-image: url('images/orange/IMG_0776.JPEG'); }
 .tile-yellow { background-image: url('images/yellow/IMG_8367.JPEG'); }
-.tile-green { background: linear-gradient(135deg, #1b4227, #0f1f15); }
+.tile-green { background-image: url('images/green/IMG_8427.JPEG'); }
 .tile-blue { background: linear-gradient(135deg, #16365f, #0d182a); }
 .tile-purple { background: linear-gradient(135deg, #4e275f, #19101f); }
 .tile-white { background: linear-gradient(135deg, #8b8b8b, #4d4d4d); }
