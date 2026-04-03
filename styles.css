@@ -152,7 +152,7 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
 .tile-orange { background-image: url('images/orange/IMG_0776.JPEG'); }
 .tile-yellow { background-image: url('images/yellow/IMG_8367.JPEG'); }
 .tile-green { background-image: url('images/green/IMG_8427.JPEG'); }
-.tile-blue { background: linear-gradient(135deg, #16365f, #0d182a); }
+.tile-blue { background-image: url('images/blue/IMG_8139.JPEG'); }
 .tile-purple { background: linear-gradient(135deg, #4e275f, #19101f); }
 .tile-white { background: linear-gradient(135deg, #8b8b8b, #4d4d4d); }
 .tile-brown { background: linear-gradient(135deg, #5b3b25, #21150d); }
