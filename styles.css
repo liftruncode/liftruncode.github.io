@@ -239,6 +239,12 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   background: radial-gradient(circle at top left, rgba(214,176,42,0.22), transparent 36%),
               radial-gradient(circle at top right, rgba(255,223,120,0.12), transparent 30%);
 }
+
+.subhero-green {
+  background: radial-gradient(circle at top left, rgba(54,132,72,0.22), transparent 36%),
+              radial-gradient(circle at top right, rgba(138,214,154,0.10), transparent 30%);
+}
+
 .back-links { margin-top: 1.25rem; }
 .gallery-grid-page .card figcaption { display: none; }
 .gallery-grid-page .card img { cursor: pointer; }
