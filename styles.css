@@ -250,6 +250,11 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
               radial-gradient(circle at top right, rgba(150,190,255,0.10), transparent 30%);
 }
 
+.subhero-purple {
+  background: radial-gradient(circle at top left, rgba(118,72,170,0.22), transparent 36%),
+              radial-gradient(circle at top right, rgba(196,160,255,0.10), transparent 30%);
+}
+
 .back-links { margin-top: 1.25rem; }
 .gallery-grid-page .card figcaption { display: none; }
 .gallery-grid-page .card img { cursor: pointer; }
