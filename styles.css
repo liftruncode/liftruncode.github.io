@@ -162,17 +162,28 @@ nav a:hover, .contact-links a:hover, .back-link:hover { color: white; }
   padding: 4.5rem 0;
   border-top: 1px solid var(--line);
 }
-.about-dark { background: var(--surface-2); }
+
+.about-dark {
+  background:
+    radial-gradient(circle at bottom left, rgba(118,72,170,0.10), transparent 34%),
+    radial-gradient(circle at top right, rgba(255,128,0,0.08), transparent 30%),
+    linear-gradient(to bottom, #111 0%, #0d0d0d 100%);
+}
 .about-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
+  align-items: center;
 }
 .contact-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.25rem;
+}
+
+.about-section .contact-links {
+  justify-content: flex-start;
 }
 .contact-links a, .back-link {
   padding: 0.85rem 1rem;
